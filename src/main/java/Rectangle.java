@@ -28,4 +28,8 @@ public class Rectangle extends Figura {
     public void SetL2(int costat2){
         this.l2=costat2;
     }
+
+    public int compareTo(Figura o) {
+        return (int)(this.area() - o.area());
+    }
 }

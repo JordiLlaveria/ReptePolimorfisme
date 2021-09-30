@@ -22,7 +22,6 @@ class GestorFiguras {
         double suma = suma(figuras);
         System.out.printf("La suma de las areas es: %f\n",suma);
         Figura[] llistaordenada = sort(figuras);
-        System.out.printf("El area del rectangulo es %f\n",rectangle.area());
     }
 
     public static double suma(Figura[] listfiguras)
@@ -31,7 +30,6 @@ class GestorFiguras {
         double suma=0;
         while (i<listfiguras.length) {
             suma = listfiguras[i].area() + suma;
-            System.out.printf("El area es %f\n",listfiguras[i].area());
             i=i+1;
         }
         return suma;

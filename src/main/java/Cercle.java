@@ -11,6 +11,10 @@ public class Cercle extends Figura {
         this.r=radi;
     }
     public double area() {
-        return Math.PI*r*r;
+        return (Math.PI*r*r);
+    }
+
+    public int compareTo(Figura o) {
+        return (int)(this.area() - o.area());
     }
 }
