@@ -7,21 +7,22 @@ class GestorFiguras {
         Figura[] figuras = new Figura[4];
         System.out.println("Me llamo Jordi\n");
         Rectangle rectangle = new Rectangle();
-        rectangle.SetL1(5);
-        rectangle.SetL2(3);
+        rectangle.setL1(5);
+        rectangle.setL2(3);
         figuras[0] = rectangle;
         Cercle cercle = new Cercle();
-        cercle.SetRadi(2);
+        cercle.setRadi(2);
         figuras[1] = cercle;
         TriangleEQ triangleEQ = new TriangleEQ();
-        triangleEQ.Setbase(2);
-        triangleEQ.Setaltura(5);
+        triangleEQ.setBase(20);
+        triangleEQ.setAltura(5);
         figuras[2]=triangleEQ;
         Quadrat quadrat = new Quadrat(5);
         figuras[3] = quadrat;
         double suma = suma(figuras);
         System.out.printf("La suma de las areas es: %f\n",suma);
-        Figura[] llistaordenada = sort(figuras);
+        sort(figuras);
+        System.out.printf("La suma de las areas es: %f\n",suma);
     }
 
     public static double suma(Figura[] listfiguras)

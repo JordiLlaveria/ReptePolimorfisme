@@ -1,6 +1,7 @@
 public class Rectangle extends Figura {
     public int l1;
     public int l2;
+    private double area;
 
     public Rectangle(){};
 
@@ -11,25 +12,22 @@ public class Rectangle extends Figura {
     }
 
     public double area() {
-        return l1 * l2;
+        return this.area=l1 * l2;
     }
-    public int GetL1 (){
+    public int getL1(){
         return this.l1;
     }
 
-    public int GetL2(){
+    public int getL2(){
         return this.l2;
     }
 
-    public void SetL1(int costat1){
+    public void setL1(int costat1){
         this.l1=costat1;
     }
 
-    public void SetL2(int costat2){
+    public void setL2(int costat2){
         this.l2=costat2;
     }
 
-    public int compareTo(Figura o) {
-        return (int)(this.area() - o.area());
-    }
 }

@@ -2,5 +2,7 @@ public abstract class Figura implements Comparable<Figura> {
 
     public abstract double area();
 
-    public abstract int compareTo(Figura f);
+    public int compareTo(Figura o) {
+        return (int)(this.area() - o.area());
+    }
 }

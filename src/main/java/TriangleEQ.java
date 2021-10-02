@@ -1,28 +1,26 @@
 public class TriangleEQ extends Figura {
     private int b;
     private int h;
+    private double area;
 
     public double area() {
-        return (b*h)/2;
+        return this.area=(b*h)/2;
     }
 
-    public int Getbase(){
+    public int getBase(){
         return this.b;
     }
 
-    public void Setbase(int base){
+    public void setBase(int base){
         this.b=base;
     }
 
-    public int Getaltura(){
+    public int getAltura(){
         return this.h;
     }
 
-    public void Setaltura(int altura){
+    public void setAltura(int altura){
         this.h=altura;
     }
 
-    public int compareTo(Figura o) {
-        return (int)(this.area() - o.area());
-    }
 }
